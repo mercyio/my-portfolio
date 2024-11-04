@@ -1,0 +1,3 @@
+1. Make config for work experience section and projects section
+2. make auto resume maker , it would use the information from the config to generate a resume , add a script in the package json to update resume (when content changes)
+3. add skills section to the homepage 

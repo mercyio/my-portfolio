@@ -21,6 +21,7 @@ export default function Home() {
             <Link
               href="/resume"
               className="text-base hover:text-zinc-400 flex items-center gap-1 group"
+              target="_blank"
             >
               <span className="group-hover:underline decoration-wavy decoration-1">
                 See resume
@@ -68,21 +69,29 @@ export default function Home() {
               {/* social links start */}
               <div className="flex items-center gap-4 flex-wrap">
                 {Object.entries(UserSocials).map(
-                  ([name, { icon: Icon, url }]) => (
-                    <Link
-                      key={url}
-                      href={url}
-                      className="text-zinc-300 hover:text-zinc-100 flex items-center gap-1 group"
-                    >
-                      <Icon className="h-4 w-4" />
-                      <span className="text-base underline group-hover:decoration-wavy">
-                        {name}
-                      </span>
-                      <span className="transition-transform duration-200 transform group-hover:rotate-90">
-                        ↗
-                      </span>
-                    </Link>
-                  )
+                  ([name, { icon: Icon, url }]) => {
+                    let mailtoUrl = null;
+                    if (url.includes('@')) {
+                      mailtoUrl = `mailto:${url}`;
+                    }
+
+                    return (
+                      <Link
+                        key={url}
+                        href={mailtoUrl || url}
+                        className="text-zinc-300 hover:text-zinc-100 flex items-center gap-1 group"
+                        target="_blank"
+                      >
+                        <Icon className="h-4 w-4" />
+                        <span className="text-base underline group-hover:decoration-wavy">
+                          {name}
+                        </span>
+                        <span className="transition-transform duration-200 transform group-hover:rotate-90">
+                          ↗
+                        </span>
+                      </Link>
+                    );
+                  }
                 )}
               </div>
 
@@ -93,7 +102,7 @@ export default function Home() {
 
         {/* Work Experience Section */}
         <section className="container mx-auto px-4 mb-16">
-          <h2 className="text-2xl font-bold mb-8">work</h2>
+          <h2 className="text-2xl font-bold mb-8">Work Experience</h2>
 
           <div className="space-y-12">
             <div>
@@ -133,73 +142,111 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Projects Section */}
-        {/* <section className="container mx-auto px-4">
-          <h2 className="text-xl font-bold mb-8">projects</h2>
+        {/* project section starts */}
+        <section className="container mx-auto px-4 mb-16">
+          <h2 className="text-2xl font-bold mb-8">Projects</h2>
 
-          <div className="grid gap-12">
-            <Card className="bg-zinc-800 border-zinc-700">
-              <CardContent className="p-6">
-                <div className="flex justify-between items-start gap-6">
-                  <div>
-                    <h3 className="text-lg font-semibold mb-1">ZensOps</h3>
-                    <p className="text-zinc-400 mb-2">creator and maintainer</p>
-                    <p className="text-zinc-300 mb-4">
-                      ZensOps is an open-source, self-hosted Platform as a
-                      Service (PaaS) for deploying and managing applications,
-                      inspired by projects like Railway, Vercel, and Coolify.
-                    </p>
-                    <Link
-                      href="https://github.com/your-project"
-                      className="inline-flex items-center text-zinc-400 hover:text-zinc-100"
-                    >
-                      <span className="mr-1">https://github.com/zens-ops</span>
-                      <ExternalLink className="h-4 w-4" />
-                    </Link>
-                  </div>
-                  <Image
-                    src="/placeholder.svg?height=200&width=300"
-                    width={300}
-                    height={200}
-                    alt="ZensOps screenshot"
-                    className="rounded-lg"
-                  />
-                </div>
-              </CardContent>
-            </Card>
+          <div className="space-y-24">
+            {/* ZaneOps Project */}
+            <div className="flex flex-col md:flex-row gap-8 items-start">
+              <div className="flex-1 space-y-4">
+                <h3 className="text-xl font-semibold hover:underline decoration-wavy">
+                  <Link
+                    href="https://github.com/zane-ops/zane-ops"
+                    target="_blank"
+                  >
+                    ZaneOps
+                  </Link>
+                </h3>
+                <p className="text-zinc-400">creator and maintainer</p>
+                <p className="text-zinc-300 leading-relaxed">
+                  ZaneOps is an open-source, self-hosted Platform as a Service
+                  (PaaS) for deploying and managing applications, inspired by
+                  projects like{' '}
+                  <Link href="#" className="underline">
+                    Railway
+                  </Link>
+                  ,{' '}
+                  <Link href="#" className="underline">
+                    Vercel
+                  </Link>
+                  , and{' '}
+                  <Link href="#" className="underline">
+                    Coolify
+                  </Link>
+                  . This platform allows developers to deploy apps on their own
+                  servers without manually managing CI/CD and configuration.
+                </p>
+                <Link
+                  href="https://github.com/zane-ops/zane-ops"
+                  className="inline-flex items-center gap-2 text-zinc-300 hover:text-zinc-100 group"
+                  target="_blank"
+                >
+                  <span className="underline group-hover:decoration-wavy">
+                    https://github.com/zane-ops/zane-ops
+                  </span>
+                  <span className="transition-transform duration-200 transform group-hover:rotate-90">
+                    ↗
+                  </span>
+                </Link>
+              </div>
+              <div className="hidden md:block md:w-[300px] flex-shrink-0">
+                <Image
+                  src="https://iili.io/juKYjp.jpg"
+                  width={300}
+                  height={180}
+                  alt="ZaneOps Preview"
+                  className="rounded-lg shadow-lg transform -rotate-12 transition duration-300 hover:rotate-0 max-w-[300px] max-h-[180px]"
+                />
+              </div>
+            </div>
 
-            <Card className="bg-zinc-800 border-zinc-700">
-              <CardContent className="p-6">
-                <div className="flex justify-between items-start gap-6">
-                  <div>
-                    <h3 className="text-lg font-semibold mb-1">Gh-next</h3>
-                    <p className="text-zinc-400 mb-2">creator and maintainer</p>
-                    <p className="text-zinc-300 mb-4">
-                      A GitHub clone built with Next.js, utilizing the new App
-                      Router paradigm and server components. The goal is to
-                      recreate GitHub's UI and core functionality from the
-                      ground up.
-                    </p>
-                    <Link
-                      href="https://github.com/your-project"
-                      className="inline-flex items-center text-zinc-400 hover:text-zinc-100"
-                    >
-                      <span className="mr-1">https://github.com/gh-next</span>
-                      <ExternalLink className="h-4 w-4" />
-                    </Link>
-                  </div>
-                  <Image
-                    src="/placeholder.svg?height=200&width=300"
-                    width={300}
-                    height={200}
-                    alt="Gh-next screenshot"
-                    className="rounded-lg"
-                  />
-                </div>
-              </CardContent>
-            </Card>
+            {/* Gh-next Project */}
+            <div className="flex flex-col md:flex-row gap-8 items-start">
+              <div className="hidden md:block md:w-[300px] flex-shrink-0">
+                <Image
+                  src="https://iili.io/2upHTg.jpg"
+                  width={300}
+                  height={180}
+                  alt="Gh-next Preview"
+                  className="rounded-lg shadow-lg transform rotate-12 transition duration-300 hover:rotate-0 max-w-[300px] max-h-[180px]"
+                />
+              </div>
+              <div className="flex-1 space-y-4">
+                <h3 className="text-xl font-semibold hover:underline">
+                  <Link
+                    href="https://github.com/fredkiss3/gh-next"
+                    target="_blank"
+                  >
+                    Gh-next
+                  </Link>
+                </h3>
+                <p className="text-zinc-400">creator and maintainer</p>
+                <p className="text-zinc-300 leading-relaxed">
+                  A GitHub clone built with Next.js, utilizing the new App
+                  Router paradigm and server components. The goal was to
+                  recreate GitHub's UI and core functionality from the ground
+                  up. Key features include a custom-built issue search page,
+                  from database design to UI, closely mirroring GitHub's backend
+                  structure. Additionally, the UI was enhanced with a more
+                  effective keyword highlighting system in the search input.
+                </p>
+                <Link
+                  href="https://github.com/fredkiss3/gh-next"
+                  className="inline-flex items-center gap-2 text-zinc-300 hover:text-zinc-100 group"
+                >
+                  <span className="underline group-hover:decoration-wavy">
+                    https://github.com/fredkiss3/gh-next
+                  </span>
+                  <span className="transition-transform duration-200 transform group-hover:rotate-90">
+                    ↗
+                  </span>
+                </Link>
+              </div>
+            </div>
           </div>
-        </section> */}
+        </section>
+        {/* project section ends */}
 
         {/* Footer */}
         <footer className="container mx-auto px-4 mt-16 pt-8 border-t border-zinc-800">
@@ -215,6 +262,7 @@ export default function Home() {
                 <Link
                   href={AppSetting.inspiredBy}
                   className="hover:underline decoration-wavy decoration-1"
+                  target="_blank"
                 >
                   {AppSetting.inspiredBy}
                 </Link>
