@@ -14,7 +14,7 @@ export interface BaseTemplate {
 export const BaseTemplate: BaseTemplate = {
   heroImage: {
     type: 'file',
-    url: 'jc-image.png'
+    url: 'jc_img_1.png'
   },
   fullName: UserInfo.fullName,
   location: UserInfo.location,

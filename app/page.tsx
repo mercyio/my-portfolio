@@ -52,7 +52,7 @@ export default function Home() {
                   src={
                     BaseTemplate.heroImage.type === 'url'
                       ? BaseTemplate.heroImage.url
-                      : `/public/images/${BaseTemplate.heroImage.url}`
+                      : `/images/${BaseTemplate.heroImage.url}`
                   }
                   width={100}
                   height={100}
