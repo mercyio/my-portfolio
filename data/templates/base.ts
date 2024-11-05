@@ -23,8 +23,8 @@ export interface BaseTemplate {
 
 export const BaseTemplate: BaseTemplate = {
   heroImage: {
-    type: "file",
-    url: "jc_img_1.png",
+    type: "file", // this is the type of the hero image, it can be a url or a file
+    url: "jc_img_1.png", // if it's a file, it should be in the public folder and you should use the file name
   },
   fullName: UserInfo.fullName,
   location: UserInfo.location,

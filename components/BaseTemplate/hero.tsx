@@ -62,7 +62,7 @@ export const HeroSection = () => {
           </p>
 
           {/* social links start */}
-          {BaseTemplate.features.SKILLS_SECTION && (
+          {BaseTemplate.features.SOCIALS_SECTION && (
             <div className="flex items-center gap-4 flex-wrap">
               {Object.entries(UserSocials).map(
                 ([name, { icon: Icon, url }]) => {
