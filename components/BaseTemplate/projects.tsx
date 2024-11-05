@@ -28,7 +28,7 @@ export const ProjectsSection = () => {
             )}
             <div className="flex-1 space-y-4">
               <h3 className="text-xl font-semibold underline hover:decoration-wavy">
-                <Link href={project.githubUrl} target="_blank">
+                <Link href={project.url} target="_blank">
                   {project.title}
                 </Link>
               </h3>
@@ -37,12 +37,12 @@ export const ProjectsSection = () => {
                 {project.description}
               </p>
               <Link
-                href={project.githubUrl}
+                href={project.url}
                 className="inline-flex items-center gap-2 text-zinc-300 hover:text-zinc-100 group"
                 target="_blank"
               >
                 <span className="underline group-hover:decoration-wavy">
-                  {project.githubUrl}
+                  {project.url}
                 </span>
                 <span className="transition-transform duration-200 transform group-hover:rotate-90">
                   ↗

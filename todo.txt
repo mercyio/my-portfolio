@@ -1,3 +1,4 @@
 2. make auto resume maker , it would use the information from the config to generate a resume , add a script in the package json to update resume (when content changes)
 4. add project link to the bottom that links to the project github and a text to say (create your own portfolio)
 5. have a page for preview that'll only show when the project is run on dev (node_env is set to dev) , so the preview page will be to show the available template names so users can choose which to use
+6. optimize for SEO 

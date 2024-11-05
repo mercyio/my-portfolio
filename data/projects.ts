@@ -2,25 +2,25 @@ export interface Project {
   title: string;
   role: string;
   description: string;
-  githubUrl: string;
+  url: string;
   previewImage: string;
 }
 
 export const UserProjects: Project[] = [
   {
-    title: "ZaneOps",
-    role: "creator and maintainer",
+    title: "StartEase",
+    role: "Creator and Maintainer",
     description:
-      "ZaneOps is an open-source, self-hosted Platform as a Service (PaaS) for deploying and managing applications, inspired by projects like Railway, Vercel, and Coolify. This platform allows developers to deploy apps on their own servers without manually managing CI/CD and configuration.",
-    githubUrl: "https://github.com/zane-ops/zane-ops",
-    previewImage: "https://iili.io/juKYjp.jpg",
+      "StartEase is a command-line interface (CLI) tool designed to streamline project setup. It provides effortless scaffolding for various frontend, backend, and full-stack projects, supporting popular technologies like React, Vue.js, Express.js, Nest.js, and more. With StartEase, developers can quickly set up projects with their preferred tech stack and database, saving time and effort in the initial setup phase",
+    url: "https://github.com/JC-Coder/startease",
+    previewImage: "https://iili.io/2xguHU7.md.png",
   },
   {
-    title: "Gh-next",
-    role: "creator and maintainer",
+    title: "Vince Technologies",
+    role: "Software Engineer",
     description:
-      "A GitHub clone built with Next.js, utilizing the new App Router paradigm and server components. The goal was to recreate GitHub's UI and core functionality from the ground up. Key features include a custom-built issue search page, from database design to UI, closely mirroring GitHub's backend structure. Additionally, the UI was enhanced with a more effective keyword highlighting system in the search input.",
-    githubUrl: "https://github.com/fredkiss3/gh-next",
-    previewImage: "https://iili.io/2upHTg.jpg",
+      "Vince Technologies is a leading provider of project management training programs. Their comprehensive curriculum is designed to empower professionals at all levels, from beginners to experienced project managers, with the skills and knowledge needed to excel in their roles. With a focus on unlocking the full potential of individuals and teams, Vince Technologies offers expert-led courses that cover the latest industry best practices and methodologies",
+    url: "https://vincetechnologies.com",
+    previewImage: "https://iili.io/2xgoqmv.md.png",
   },
 ];
