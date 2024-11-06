@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { UserNav } from "../../components/dashboard/user-nav";
 
 export default function DashboardLayout({
@@ -11,7 +12,9 @@ export default function DashboardLayout({
       <header className="fixed top-0 w-full border-b border-white/10 bg-black/50 backdrop-blur-lg">
         <div className="container mx-auto px-4 h-16">
           <nav className="flex items-center justify-between h-full">
-            <h1 className="text-white font-semibold">Dashboard</h1>
+            <Link href="/dashboard" className="text-white font-semibold">
+              Dashboard
+            </Link>
             <UserNav />
           </nav>
         </div>
