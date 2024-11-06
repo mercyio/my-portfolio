@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/ui/logo";
 import { ArrowRight, Star } from "lucide-react";
+import { AppSetting } from "../data/appSetting";
 
 export default function LandingPage() {
   return (
@@ -142,7 +143,7 @@ export default function LandingPage() {
       <footer className="px-4 py-8 border-t border-neutral-800">
         <div className="container mx-auto max-w-6xl flex justify-between items-center">
           <p className="text-sm text-gray-400">
-            © 2024 Portfolio Creator. All rights reserved.
+            © 2024 {AppSetting.appName}. All rights reserved.
           </p>
           <div className="flex gap-6">
             <Link
