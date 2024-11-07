@@ -19,12 +19,17 @@ export interface BaseTemplate {
   features: {
     [key in FeaturesEnum]: boolean; // key is the feature name and value is a boolean to determine if the feature is active or not
   };
+  inspiredBy: string;
 }
 
 export const BaseTemplate: BaseTemplate = {
+  // IMPORTANT: DON'T REMOVE THIS (inspiredBy), this is used to credit the design inspiration gotten for this template
+  inspiredBy: "https://fredkiss.dev",
   heroImage: {
-    type: "file", // this is the type of the hero image, it can be a url or a file
-    url: "jc_img_1.png", // if it's a file, it should be in the public folder and you should use the file name
+    // this is the type of the hero image, it can be a url or a file
+    type: "file",
+    // if it's a file, it should be in the public folder and you should use the file name
+    url: "jc_img_1.png",
   },
   fullName: UserInfo.fullName,
   location: UserInfo.location,

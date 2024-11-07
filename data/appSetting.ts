@@ -1,5 +1,7 @@
+import { AVAILABLE_TEMPLATES } from "./templates/config";
+
 export const AppSetting = {
-  appName: 'Portify',
+  appName: "Portify",
   copyrightDate: new Date().getFullYear(),
-  inspiredBy: 'https://fredkiss.dev'
+  template: AVAILABLE_TEMPLATES.BASE,
 };

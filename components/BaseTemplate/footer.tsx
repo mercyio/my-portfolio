@@ -1,5 +1,6 @@
 import { AppSetting } from "@/data/appSetting";
 import Link from "next/link";
+import { BaseTemplate } from "../../data/templates/base";
 
 export const FooterSection = () => {
   return (
@@ -14,11 +15,11 @@ export const FooterSection = () => {
           <span>
             Inspired by{" "}
             <Link
-              href={AppSetting.inspiredBy}
+              href={BaseTemplate.inspiredBy}
               className="hover:underline decoration-wavy decoration-1"
               target="_blank"
             >
-              {AppSetting.inspiredBy}
+              {BaseTemplate.inspiredBy}
             </Link>
           </span>
         </div>
