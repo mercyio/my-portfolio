@@ -2,3 +2,4 @@
 4. add project link to the bottom that links to the project github and a text to say (create your own portfolio)
 5. have a page for preview that'll only show when the project is run on dev (node_env is set to dev) , so the preview page will be to show the available template names so users can choose which to use
 6. optimize for SEO 
+7. make provision for user to integrate google analytics

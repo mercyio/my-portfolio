@@ -10,19 +10,27 @@
   <p align="center">
     <a href="#-demo">View Demo</a>
     ·
-    <a href="#-why-portify">Features</a>
+    <a href="#-features">Features</a>
     ·
-    <a href="#-quick-start">Quick Start</a>
+    <a href="USAGE.md">Documentation</a>
     ·
-    <a href="#-templates">Templates</a>
-    ·
-    <a href="#-customization">Customization</a>
+    <a href="CONTRIBUTING.md">Contributing</a>
     ·
     <a href="#-deploy">Deploy</a>
   </p>
+
+  <p align="center">
+    <img src="https://img.shields.io/github/stars/JC-Coder/portify?style=social" alt="GitHub stars"/>
+    <img src="https://img.shields.io/github/forks/JC-Coder/portify?style=social" alt="GitHub forks"/>
+    <img src="https://img.shields.io/github/issues/JC-Coder/portify" alt="GitHub issues"/>
+  </p>
 </div>
 
-## ✨ Why Portify?
+## 🎯 Overview
+
+Portify is a modern, customizable portfolio generator built with Next.js 14. It allows developers to create professional portfolios by simply updating configuration files - no coding required! Perfect for developers who want to showcase their work without spending time on portfolio development.
+
+## ✨ Features
 
 - 🎯 **Zero Code Required** - Just update config files
 - ⚡ **Lightning Fast** - Built with Next.js 14
@@ -31,22 +39,20 @@
 - 🌗 **Dark Mode** - Beautiful dark theme by default
 - 📱 **Mobile First** - Looks great on all devices
 - 🔍 **SEO Ready** - Optimized for search engines
+- 📊 **Analytics Ready** - Easy integration with your preferred analytics
+- 🚀 **One-Click Deploy** - Deploy to Vercel or Netlify instantly
+- 🎉 **Multiple Templates** - Choose from various designs
 
-## 🎯 Demo
+## 🎮 Demo
 
 Check out these portfolios built with Portify:
 
-- [jc coder portfolio](https://jc-coder.vercel.app) - Minimal Design
-
-<div align="center">
-  <h3 class="text-xl font-semibold">Your Portfolio Awaits!</h3>
-  <p>Showcase your skills effortlessly with Portify.</p>
-  <a href="#-quick-start" class="btn">Get Started</a>
-</div>
+- [JC Coder Portfolio](https://jc-coder.vercel.app) - Minimal Design
+- [Add yours!](CONTRIBUTING.md#showcasing-your-portfolio)
 
 ## 🚀 Quick Start
 
-### 1️⃣ Clone & Install
+1. **Clone & Install**
 
 ```bash
 git clone https://github.com/JC-Coder/portify.git
