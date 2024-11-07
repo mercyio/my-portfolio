@@ -49,7 +49,7 @@ Check out these portfolios built with Portify:
 ### 1️⃣ Clone & Install
 
 ```bash
-git clone https://github.com/yourusername/portify.git
+git clone https://github.com/JC-Coder/portify.git
 cd portify && npm install
 ```
 
@@ -78,11 +78,11 @@ export const UserInfo = {
 export const UserSocials = {
   github: {
     icon: Github,
-    url: "https://github.com/yourusername",
+    url: "https://github.com/JC-Coder",
   },
   twitter: {
     icon: TwitterIcon,
-    url: "https://twitter.com/yourusername",
+    url: "https://twitter.com/jc_coder1",
   }
   // Add more socials...
 };
@@ -151,8 +151,8 @@ To add new sections, modify the `BaseTemplate` in `data/templates/base.ts` and c
 
 One-click deploy with your favorite platform:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/portify)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/yourusername/portify)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/JC-Coder/portify)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/JC-Coder/portify)
 
 ## 🤝 Contributing
 
@@ -164,11 +164,7 @@ One-click deploy with your favorite platform:
 
 ## 📝 License
 
-MIT © [Your Name]
-
-## 🙏 Credits
-
-Inspired by [fredkiss.dev](https://fredkiss.dev)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
