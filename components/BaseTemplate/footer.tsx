@@ -24,6 +24,20 @@ export const FooterSection = () => {
           </span>
         </div>
       </div>
+      <div className="flex flex-col items-center justify-center mt-4">
+        <div>
+          Created with ❤️ by{" "}
+          <Link href={AppSettingData.githubUrl} className="underline">
+            JC
+          </Link>
+        </div>
+        <div>
+          Create your own resume today with{" "}
+          <Link href={AppSettingData.githubUrl} className="underline">
+            {AppSettingData.appName}
+          </Link>
+        </div>
+      </div>
     </footer>
   );
 };
