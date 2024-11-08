@@ -1,4 +1,4 @@
-import { UserSkills } from "../../data/skills";
+import { UserSkillsData } from "../../data/skills";
 import { BaseTemplate } from "../../data/templates/base";
 
 export const SkillsSection = () => {
@@ -8,7 +8,7 @@ export const SkillsSection = () => {
     <section className="container mx-auto px-4 mb-16">
       <h2 className="text-2xl font-bold mb-8">Skills</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
-        {UserSkills.map((skill) => (
+        {UserSkillsData.map((skill) => (
           <div
             key={skill.name}
             className="group relative flex flex-col bg-zinc-800/50 rounded-xl p-4 hover:bg-zinc-800 transition-colors border border-zinc-700"

@@ -1,4 +1,4 @@
-import { UserInfo } from "../usersInfo";
+import { UserInfoData } from "../usersInfo";
 
 export enum FeaturesEnum {
   SOCIALS_SECTION = "SOCIALS_SECTION",
@@ -31,10 +31,10 @@ export const BaseTemplate: BaseTemplate = {
     // if it's a file, it should be in the public folder and you should use the file name
     url: "jc_img_1.png",
   },
-  fullName: UserInfo.fullName,
-  location: UserInfo.location,
-  tagline: UserInfo.tagLine,
-  miniBio: UserInfo.miniBio,
+  fullName: UserInfoData.fullName,
+  location: UserInfoData.location,
+  tagline: UserInfoData.tagLine,
+  miniBio: UserInfoData.miniBio,
   features: {
     [FeaturesEnum.SOCIALS_SECTION]: true,
     [FeaturesEnum.SKILLS_SECTION]: true,

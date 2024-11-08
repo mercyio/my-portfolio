@@ -6,7 +6,7 @@ export interface Project {
   previewImage: string;
 }
 
-export const UserProjects: Project[] = [
+export const UserProjectsData: Project[] = [
   {
     title: "StartEase",
     role: "Creator and Maintainer",

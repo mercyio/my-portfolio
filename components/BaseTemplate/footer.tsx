@@ -1,4 +1,4 @@
-import { AppSetting } from "@/data/appSetting";
+import { AppSettingData } from "@/data/appSetting";
 import Link from "next/link";
 import { BaseTemplate } from "../../data/templates/base";
 
@@ -7,7 +7,7 @@ export const FooterSection = () => {
     <footer className="container mx-auto px-4 mt-16 pt-8 border-t border-zinc-800">
       <div className="flex justify-between items-center text-zinc-400 text-sm">
         <p>
-          Copyright © {AppSetting.copyrightDate} • {AppSetting.appName}
+          Copyright © {AppSettingData.copyrightDate} • {AppSettingData.appName}
         </p>
         <div className="flex items-center gap-1">
           <span>Built with Next.js</span>

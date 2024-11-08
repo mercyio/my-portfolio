@@ -1,5 +1,5 @@
 import { BaseTemplate } from "@/data/templates/base";
-import { UserSocials } from "@/data/socials";
+import { UserSocialsData } from "@/data/socials";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -16,7 +16,6 @@ export const HeroSection = () => {
         <Link
           href="/resume"
           className="text-base hover:text-zinc-400 flex items-center gap-1 group"
-          target="_blank"
         >
           <span className="underline group-hover:decoration-wavy decoration-1">
             View resume
@@ -64,7 +63,7 @@ export const HeroSection = () => {
           {/* social links start */}
           {BaseTemplate.features.SOCIALS_SECTION && (
             <div className="flex items-center gap-4 flex-wrap">
-              {Object.entries(UserSocials).map(
+              {Object.entries(UserSocialsData).map(
                 ([name, { icon: Icon, url }]) => {
                   let mailtoUrl = null;
                   if (url.includes("@")) {

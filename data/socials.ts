@@ -1,6 +1,6 @@
 import { Github, Linkedin, Mail, TwitterIcon } from "lucide-react";
 
-export const UserSocials = {
+export const UserSocialsData = {
   // facebook: {
   //   icon: FacebookIcon,
   //   url: "https://facebook.com/jc_coder1",

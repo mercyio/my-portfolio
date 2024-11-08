@@ -1,4 +1,4 @@
-export const UserSkills = [
+export const UserSkillsData = [
   {
     name: "Frontend Development",
     description: "Building beautiful and unique user interfaces.",

@@ -1,4 +1,4 @@
-import { UserProjects } from "@/data/projects";
+import { UserProjectsData } from "@/data/projects";
 import Image from "next/image";
 import Link from "next/link";
 import { BaseTemplate } from "../../data/templates/base";
@@ -10,7 +10,7 @@ export const ProjectsSection = () => {
     <section className="container mx-auto px-4 mb-16">
       <h2 className="text-2xl font-bold mb-8">Projects</h2>
       <div className="space-y-24">
-        {UserProjects.map((project, index) => (
+        {UserProjectsData.map((project, index) => (
           <div
             key={project.title}
             className="flex flex-col md:flex-row gap-8 items-start"

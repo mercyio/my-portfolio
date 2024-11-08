@@ -1,11 +1,14 @@
-export interface WorkExperience {
+export interface IWorkExperience {
   company: string;
+  companyUrl?: string;
+  projectUrl?: string;
   position: string;
   period: string;
   responsibilities: string[];
+  shortDescription?: string;
 }
 
-export const UserWorkExperience: WorkExperience[] = [
+export const UserWorkExperienceData: IWorkExperience[] = [
   {
     company: "Truparse",
     position: "Backend Developer",
@@ -13,7 +16,7 @@ export const UserWorkExperience: WorkExperience[] = [
     responsibilities: [
       "Actively involved in code optimization and product development across offerings like Pawa (now Zed), Figur, and Joblynk",
       "Spearheaded code optimizations that significantly reduced fraud and security risks",
-      "Built and optimized backend systems to improve conversion rates and enhance user experience by over 20%",
+      "Built and optimized backend systems to improve conversion rates and enhance user experience by over 23%",
       "Collaborated with cross-functional teams on requirements gathering, feature design, and product excellence",
       "Developed robust, scalable backend solutions using Node.js, Express.js, MongoDB, PostgreSQL, and DigitalOcean",
       "Implemented and enhanced security measures like authentication and authorization to protect sensitive user data",
@@ -59,6 +62,10 @@ export const UserWorkExperience: WorkExperience[] = [
     company: "Start Innovation Hub",
     position: "Backend Developer",
     period: "Nov 2022 - Feb 2023",
+    companyUrl: "https://starthub.com.ng/",
+    projectUrl: "https://starthub.com.ng/",
+    shortDescription:
+      "At starthub, i was responsible for building the backend and managing the servers of the company website",
     responsibilities: [
       "Migrating the project from its old design to a new design system",
       "Implementing an Electron port for a local developer-friendly version",
