@@ -20,9 +20,9 @@
   </p>
 
   <p align="center">
-    <img src="https://img.shields.io/github/stars/JC-Coder/portify?style=social" alt="GitHub stars"/>
-    <img src="https://img.shields.io/github/forks/JC-Coder/portify?style=social" alt="GitHub forks"/>
-    <img src="https://img.shields.io/github/issues/JC-Coder/portify" alt="GitHub issues"/>
+    <img src="https://img.shields.io/github/stars/IDAN-DEVS/portify?style=social" alt="GitHub stars"/>
+    <img src="https://img.shields.io/github/forks/IDAN-DEVS/portify?style=social" alt="GitHub forks"/>
+    <img src="https://img.shields.io/github/issues/IDAN-DEVS/portify" alt="GitHub issues"/>
   </p>
 </div>
 
@@ -55,7 +55,7 @@ Check out these portfolios built with Portify:
 1. **Clone & Install**
 
 ```bash
-git clone https://github.com/JC-Coder/portify.git
+git clone https://github.com/IDAN-DEVS/portify.git
 cd portify && npm install
 ```
 
@@ -157,8 +157,8 @@ To add new sections, modify the `BaseTemplate` in `data/templates/base.ts` and c
 
 One-click deploy with your favorite platform:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/JC-Coder/portify)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/JC-Coder/portify)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/IDAN-DEVS/portify)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/IDAN-DEVS/portify)
 
 ## 🤝 Contributing
 

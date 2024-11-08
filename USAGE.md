@@ -23,7 +23,7 @@ This guide will walk you through setting up and customizing your Portify portfol
 
    ```bash
    # Clone the repository
-   git clone https://github.com/JC-Coder/portify.git
+   git clone https://github.com/IDAN-DEVS/portify.git
 
    # Navigate to project directory
    cd portify
@@ -171,8 +171,8 @@ Two options for profile images:
 
 Deploy to your preferred platform:
 
-- **Vercel**: [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/JC-Coder/portify)
-- **Netlify**: [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/JC-Coder/portify)
+- **Vercel**: [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/IDAN-DEVS/portify)
+- **Netlify**: [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/IDAN-DEVS/portify)
 
 ## FAQ
 
