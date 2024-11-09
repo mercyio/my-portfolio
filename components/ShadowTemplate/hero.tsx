@@ -38,7 +38,7 @@ export function ShadowHero() {
             variants={itemVariants}
           >
             <span className="text-black font-mono text-base block mb-5">Hi, my name is</span>
-            <span className="text-black block mb-2">{UserInfoData.fullName}</span>
+            <span className="text-black block mb-2">{UserInfoData.fullName}.</span>
             <span className="text-black">{UserInfoData.tagLine}</span>
           </motion.h1>
 
