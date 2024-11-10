@@ -38,8 +38,8 @@ export function ShadowHero() {
             variants={itemVariants}
           >
             <span className="text-black font-mono text-base block mb-5">Hi, my name is</span>
-            <span className="text-black block mb-2">{UserInfoData.fullName}.</span>
-            <span className="text-black">{UserInfoData.tagLine}</span>
+            <span className="text-black text-[clamp(20px,4vw,40px)] block mb-2">{UserInfoData.fullName}.</span>
+            <span className="text-black text-[clamp(20px,4vw,40px)] -mt-1 block">{UserInfoData.tagLine}</span>
           </motion.h1>
 
           <motion.div variants={itemVariants} className="mb-8">
@@ -75,7 +75,7 @@ export function ShadowHero() {
           initial="hidden"
           animate="visible"
           variants={containerVariants}
-          className="text-lg leading-relaxed space-y-6 font-mono lg:-mt-40"
+          className="text-lg leading-relaxed space-y-6 font-mono lg:-mt-45"
         >
           <motion.p variants={itemVariants}>
             {UserInfoData.miniBio}
