@@ -50,17 +50,35 @@ const config: Config = {
           "4": "hsl(var(--chart-4))",
           "5": "hsl(var(--chart-5))",
         },
+        navy: {
+          DEFAULT: '#0a192f',
+          light: '#112240',
+          lighter: '#233554',
+        },
+        slate: {
+          DEFAULT: '#8892b0',
+          light: '#a8b2d1',
+          lighter: '#ccd6f6',
+        },
+        green: {
+          DEFAULT: '#64ffda',
+        },
+      },
+      lineHeight: {
+        relaxed: '1.5',
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+
     },
     fontFamily: {
       sans: ["Poppins", "sans-serif"],
     },
   },
   plugins: [require("tailwindcss-animate")],
+  mono: ['SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', 'monospace'],
 };
 export default config;
