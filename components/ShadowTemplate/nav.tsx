@@ -4,7 +4,7 @@ import Link from "next/link";
 export function ShadowNav() {
   return (
     <nav className="fixed left-[40px] top-1/2 -translate-y-1/2 hidden lg:block">
-      <ul className="flex flex-col space-y-32">
+      <ul className="flex flex-col space-y-24">
         <li>
           <Link 
             href="#about" 

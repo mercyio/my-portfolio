@@ -3,8 +3,19 @@ import { motion } from "framer-motion";
 import { UserWorkExperienceData } from "@/data/workExperience";
 import type { IWorkExperience } from "@/data/workExperience";
 import { containerVariants, itemVariants } from "./animations";
+import { useState } from "react";
 
 export function ShadowExperience() {
+  const [expandedCards, setExpandedCards] = useState<number[]>([]);
+
+  const toggleCard = (index: number) => {
+    setExpandedCards(prev => 
+      prev.includes(index) 
+        ? prev.filter(i => i !== index)
+        : [...prev, index]
+    );
+  };
+
   return (
     <section id="experience" className="max-w-[1000px] mx-auto py-24">
       <motion.div
@@ -34,9 +45,19 @@ export function ShadowExperience() {
               <h3 className="text-black text-lg font-semibold mb-2">
                 @ {exp.company}
               </h3>
-              <p className="text-black/80 text-sm leading-relaxed">
-                {exp.shortDescription || exp.responsibilities[0]}
+              <p className="text-black/800 text-sm leading-relaxed">
+                {expandedCards.includes(index) 
+                  ? exp.responsibilities.map((resp, i) => (
+                      <span key={i} className="block mb-2">{resp}</span>
+                    ))
+                  : (exp.shortDescription || exp.responsibilities[0])}
               </p>
+              <button 
+                onClick={() => toggleCard(index)}
+                className="text-sm text-blue-600 hover:text-blue-800 mt-2"
+              >
+                {expandedCards.includes(index) ? 'See less' : 'See more'}
+              </button>
             </div>
           ))}
         </motion.div>
