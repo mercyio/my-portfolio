@@ -8,7 +8,7 @@
   </p>
 
   <p align="center">
-    <a href="#-demo">View Demo</a>
+    <a href="/templates">View Templates</a>
     ·
     <a href="#-features">Features</a>
     ·
@@ -32,23 +32,28 @@ Portify is a modern, customizable portfolio generator built with Next.js 14. It 
 
 ## ✨ Features
 
+- 🎨 **Multiple Templates** - Choose from various professionally designed templates
 - 🎯 **Zero Code Required** - Just update config files
 - ⚡ **Lightning Fast** - Built with Next.js 14
-- 🎨 **Modern Design** - Clean, responsive layouts
-- 🔧 **Easy Configuration** - Simple JSON/TS configs
-- 🌗 **Dark Mode** - Beautiful dark theme by default
+- 🌗 **Dark & Light Modes** - Beautiful themes for each template
 - 📱 **Mobile First** - Looks great on all devices
 - 🔍 **SEO Ready** - Optimized for search engines
 - 📊 **Analytics Ready** - Easy integration with your preferred analytics
-- 🚀 **One-Click Deploy** - Deploy to Vercel or Netlify instantly
-- 🎉 **Multiple Templates** - Choose from various designs
+- 🚀 **One-Click Deploy** - Deploy to Vercel instantly
+- 🎉 **Live Preview** - Try templates before you choose
 
-## 🎮 Demo
+## 🎮 Templates & Demo
 
-Check out these portfolios built with Portify:
+Visit our [Templates Gallery](/templates) to explore all available templates:
 
-- [JC Coder Portfolio](https://jc-coder.vercel.app) - Minimal Design
-- [Add yours!](CONTRIBUTING.md#showcasing-your-portfolio)
+- **Base Template** - Clean, minimal design with dark mode
+- **Shadow Template** - Modern and elegant with subtle shadows
+- More templates coming soon!
+
+Try them live:
+1. Visit `/templates` to see all available templates
+2. Click on any template to view a live demo
+3. Use the "Use Template" button to get started
 
 ## 🚀 Quick Start
 
@@ -59,121 +64,91 @@ git clone https://github.com/IDAN-DEVS/portify.git
 cd portify && npm install
 ```
 
-### 2️⃣ Configure
+2. **Start Development**
 
-Update these key files:
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+3. **Choose Your Template**
+
+Visit `http://localhost:3000/templates` to:
+- Browse available templates
+- Preview each template with demo data
+- Select your preferred design
+
+4. **Configure**
+
+Update these key files in the `data` folder:
 
 <details>
 <summary>📄 Basic Info (Click to expand)</summary>
 
 ```typescript:data/usersInfo.ts
-export const UserInfo = {
-  fullName: 'Your Name',
-  tagLine: 'Your Title',
-  location: 'Your Location',
-  miniBio: 'Your brief bio here...'
+export const UserInfoData = {
+  fullName: "Your Name",
+  tagLine: "Your Title",
+  location: "Your Location",
+  miniBio: "Your brief bio here...",
+  heroImage: {
+    type: "url",
+    url: "/images/your-image.png",
+  },
 };
 ```
-
 </details>
 
 <details>
 <summary>🔗 Social Links</summary>
 
 ```typescript:data/socials.ts
-export const UserSocials = {
-  github: {
-    icon: Github,
-    url: "https://github.com/JC-Coder",
-  },
-  twitter: {
-    icon: TwitterIcon,
-    url: "https://twitter.com/jc_coder1",
-  }
-  // Add more socials...
+export const UserSocialsData = {
+  github: "https://github.com/yourusername",
+  linkedin: "https://linkedin.com/in/yourusername",
+  twitter: "https://twitter.com/yourusername",
+  email: "you@example.com",
 };
 ```
-
 </details>
 
 <details>
-<summary>💼 Projects</summary>
+<summary>💼 Projects & Experience</summary>
 
-```typescript:data/projects.ts
-export const UserProjects: Project[] = [
-  {
-    title: "Amazing Project",
-    role: "Creator",
-    description: "Project description...",
-    url: "https://project-url.com",
-    previewImage: "https://image-url.com/preview.png",
-  }
-];
-```
-
+See [USAGE.md](USAGE.md) for detailed examples of:
+- Project configuration
+- Work experience
+- Skills and education
 </details>
-
-### 3️⃣ Preview & Deploy
-
-```bash
-npm run dev     # Start local server
-npm run build   # Build for production
-```
-
-## 🎨 Templates
-
-Currently available templates:
-
-- Base Template (Modern, Minimal)
-- More coming soon!
-
-## 🛠️ Customization
-
-### Toggle Features
-
-```typescript:data/templates/base.ts
-export const BaseTemplate = {
-  features: {
-    SOCIALS_SECTION: true,
-    SKILLS_SECTION: true,
-    PROJECTS_SECTION: true,
-    WORK_EXPERIENCE_SECTION: true,
-  }
-};
-```
-
-### Profile Image
-
-Two options:
-
-1. **Local**: Add to `/public/images/`
-2. **Remote**: Use direct URL
-
-### Adding New Sections
-
-To add new sections, modify the `BaseTemplate` in `data/templates/base.ts` and create corresponding components in the `components` directory.
 
 ## 🚀 Deploy
 
-One-click deploy with your favorite platform:
+### Deploy to Vercel (Recommended)
+
+1. Push your repository to GitHub
+2. Visit [Vercel](https://vercel.com)
+3. Import your repository
+4. Click "Deploy"
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/IDAN-DEVS/portify)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/IDAN-DEVS/portify)
+
+## 📚 Documentation
+
+For detailed instructions and examples, check out our [Usage Guide](USAGE.md).
 
 ## 🤝 Contributing
 
-1. Fork it
-2. Create feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push (`git push origin feature/amazing-feature`)
-5. Open Pull Request
+We welcome contributions! See our [Contributing Guide](CONTRIBUTING.md) for details.
 
 ## 📝 License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
----
+## 💖 Credits
 
-<p align="center">
-  Made with ❤️ by developers, for developers
-</p>
+Created with ❤️ by [JC CODER](https://github.com/JC-Coder) and [IDAN DEVS](https://github.com/IDAN-DEVS)
+
+Templates designed by:
+- Base Template: [JC CODER](https://github.com/JC-Coder)
+- Shadow Template: [Bright Bassey](https://github.com/bright-bassey)

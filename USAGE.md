@@ -1,11 +1,19 @@
-# 🚀 Quick Start Guide - Portify
+# 📚 Portify Usage Guide
 
-Welcome to Portify! Create your stunning developer portfolio in minutes. This guide will help you get started quickly.
+Welcome to Portify! This guide will help you create and customize your professional developer portfolio.
 
-## 🎯 3 Steps to Your Portfolio
+## Table of Contents
 
-### 1️⃣ Setup (2 minutes)
+- [Quick Start](#-quick-start)
+- [Templates](#-templates)
+- [Configuration](#-configuration)
+- [Customization](#-customization)
+- [Deployment](#-deployment)
+- [FAQ](#-faq)
 
+## 🚀 Quick Start
+
+### 1. Setup (2 minutes)
 ```bash
 # Clone and install
 git clone https://github.com/IDAN-DEVS/portify.git
@@ -16,24 +24,30 @@ npm install   # or: yarn install
 npm run dev   # or: yarn dev
 ```
 
-Your site is now running at `http://localhost:3000` 🎉
+### 2. Choose a Template
 
-### 2️⃣ Add Your Info (5 minutes)
+1. Visit `http://localhost:3000/templates`
+2. Browse available templates:
+   - **Base Template**: Clean, minimal design with dark mode
+   - **Shadow Template**: Modern and elegant with subtle shadows
+3. Click on any template to view a live demo
+4. Use the "Use Template" button when you've found your perfect match
 
-All your information goes in the `data` folder:
+### 3. Configure Your Portfolio
+
+All configuration files are in the `data/` folder:
 
 📁 **data/**
-
 - `usersInfo.ts` - Your name, title, and bio
-- `projects.ts` - Your cool projects
-- `skills.ts` - Your tech skills
-- `socials.ts` - Your social links
+- `projects.ts` - Your projects
+- `skills.ts` - Your technical skills
+- `socials.ts` - Your social media links
 - `workExperience.ts` - Your work history
+- `appSetting.ts` - Template selection and app settings
 
-#### Quick Examples:
+#### Examples:
 
-**🧑‍💻 Personal Info** (`usersInfo.ts`):
-
+**👤 Personal Info** (`usersInfo.ts`):
 ```typescript
 export const UserInfoData = {
   fullName: "Jane Doe",
@@ -42,28 +56,12 @@ export const UserInfoData = {
   miniBio: "Passionate about creating beautiful web experiences",
   heroImage: {
     type: "url",
-    url: "/images/profile.png", // Add your image to public/images/
+    url: "/images/profile.png", // Add image to public/images/
   },
 }
 ```
 
-**🛠️ Projects** (`projects.ts`):
-
-```typescript
-export const ProjectsData = [
-  {
-    title: "My Awesome App",
-    description: "A cool app that does amazing things",
-    technologies: ["React", "Node.js", "MongoDB"],
-    githubUrl: "https://github.com/you/project",
-    liveUrl: "https://myapp.com",
-    image: "/images/project.png",
-  },
-]
-```
-
 **🔗 Social Links** (`socials.ts`):
-
 ```typescript
 export const UserSocialsData = {
   github: "https://github.com/yourusername",
@@ -73,43 +71,91 @@ export const UserSocialsData = {
 }
 ```
 
-### 3️⃣ Customize (Optional)
+**💼 Work Experience** (`workExperience.ts`):
+```typescript
+export const UserWorkExperienceData = [
+  {
+    company: "Tech Company",
+    position: "Senior Developer",
+    period: "2022 - Present",
+    responsibilities: [
+      "Led development of key features",
+      "Mentored junior developers",
+    ],
+  },
+]
+```
 
-#### 🎨 Theme
+**🛠️ Projects** (`projects.ts`):
+```typescript
+export const ProjectsData = [
+  {
+    title: "Project Name",
+    description: "A brief description",
+    technologies: ["React", "Node.js"],
+    githubUrl: "https://github.com/you/project",
+    liveUrl: "https://project.com",
+    image: "/images/project.png",
+  },
+]
+```
 
-Edit colors in `tailwind.config.ts`:
+### 4. Select Your Template
 
+In `data/appSetting.ts`:
+```typescript
+export const AppSettingData = {
+  template: AVAILABLE_TEMPLATES.BASE, // or AVAILABLE_TEMPLATES.SHADOW
+}
+```
+
+## 🎨 Customization
+
+### Images
+1. Add your images to `public/images/`
+2. Reference them as `/images/your-image.png`
+
+### Colors
+Edit `tailwind.config.ts`:
 ```typescript
 theme: {
   extend: {
     colors: {
       primary: "#your-color",
-      // Add more colors
     },
   },
 }
 ```
 
-#### 🖼️ Images
+## 🚀 Deployment
 
-1. Add images to `public/images/`
-2. Reference them as `/images/your-image.png`
-
-## 🚀 Deploy
-
-Ready to go live? Deploy to Vercel in one click:
-
+### Deploy to Vercel (Recommended)
 1. Push your code to GitHub
 2. Visit [vercel.com](https://vercel.com)
 3. Import your repository
 4. Click "Deploy"
 
-## 🆘 Need Help?
+## ❓ FAQ
 
-- 📖 Check our [GitHub Issues](https://github.com/IDAN-DEVS/portify/issues)
+### How do I switch templates?
+1. Visit `/templates` to preview all templates
+2. Choose your preferred template
+3. Update `template` in `data/appSetting.ts`
+
+### Can I customize the template design?
+Yes! Each template uses Tailwind CSS for styling. You can:
+1. Modify colors in `tailwind.config.ts`
+2. Edit component styles in their respective files
+3. Add new CSS classes as needed
+
+### How do I add my own template?
+See our [Contributing Guide](CONTRIBUTING.md) for instructions on creating and submitting new templates.
+
+## 🤝 Need Help?
+
+- 📖 Check [GitHub Issues](https://github.com/IDAN-DEVS/portify/issues)
+- 🌟 Star us on GitHub if you like Portify!
 - 🤝 Join our community discussions
-- ⭐ Star us on GitHub if you like Portify!
 
 ---
-
 Happy coding! 🎉
