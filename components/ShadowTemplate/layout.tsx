@@ -20,6 +20,7 @@ export function ShadowLayout({ children }: { children: React.ReactNode }) {
           margin: 0;
           padding: 0;
           color: black;
+          line-height: 1.1;
         }
         
         .font-mono {
