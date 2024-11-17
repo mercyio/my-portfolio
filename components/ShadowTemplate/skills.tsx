@@ -33,8 +33,8 @@ export function ShadowSkills() {
               <span className="text-black/80 text-sm block mb-4">
                 {tech.description}
               </span>
-              <span className="text-black text-sm block">
-                {tech.projects_completed} projects completed
+              <span className="text-black/70 text-xs font-semibold bg-black/5 rounded-full px-3 py-1 inline-block mt-2">
+                {tech.projects_completed} projects
               </span>
             </div>
           ))}

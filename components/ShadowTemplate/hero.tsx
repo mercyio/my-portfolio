@@ -38,16 +38,16 @@ export function ShadowHero() {
             variants={itemVariants}
           >
             <span className="text-black font-mono text-base block mb-5">Hi, my name is</span>
-            <span className="text-black text-[clamp(20px,4vw,40px)] block mb-2">{UserInfoData.fullName}.</span>
-            <span className="text-black text-[clamp(20px,4vw,40px)] -mt-1 block">{UserInfoData.tagLine}</span>
+            <span className="text-black text-[clamp(25px,4vw,40px)] block mb-2">{UserInfoData.fullName}.</span>
+            <span className="text-black text-[clamp(10px,4vw,15px)] block">{UserInfoData.tagLine}</span>
           </motion.h1>
 
           <motion.div variants={itemVariants} className="mb-8">
             <Link 
-              href="#projects"
+              href="/resume"
               className="inline-block px-7 py-4 border border-black text-black font-mono rounded hover:bg-black/10 transition-colors"
             >
-              Check out my projects!
+              My Resume
             </Link>
           </motion.div>
 
