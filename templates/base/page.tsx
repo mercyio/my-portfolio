@@ -3,8 +3,8 @@ import { HeroSection } from "../../components/BaseTemplate/hero";
 import { WorkExperienceSection } from "../../components/BaseTemplate/work";
 import { SkillsSection } from "../../components/BaseTemplate/skills";
 import { ProjectsSection } from "../../components/BaseTemplate/projects";
-import { FooterSection } from "../../components/BaseTemplate/footer";
 import { BaseTemplateLayout } from "../../components/BaseTemplate/layout";
+import { BaseFooter } from "@/components/BaseTemplate/footer";
 
 export default function BaseTemplate() {
   return (
@@ -13,7 +13,7 @@ export default function BaseTemplate() {
       <WorkExperienceSection />
       <SkillsSection />
       <ProjectsSection />
-      <FooterSection />
+      <BaseFooter />
     </BaseTemplateLayout>
   );
 }

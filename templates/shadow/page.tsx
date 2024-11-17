@@ -6,6 +6,7 @@ import { ShadowExperience } from "../../components/ShadowTemplate/experience";
 import { ShadowSkills } from "../../components/ShadowTemplate/skills";
 import { ShadowProjects } from "../../components/ShadowTemplate/project";
 import { ShadowLayout } from "../../components/ShadowTemplate/layout";
+import { ShadowFooter } from "@/components/ShadowTemplate/footer";
 
 export default function ShadowTemplatePage() {
   return (
@@ -15,6 +16,7 @@ export default function ShadowTemplatePage() {
       <ShadowExperience />
       <ShadowSkills />
       <ShadowProjects />
+      <ShadowFooter />
     </ShadowLayout>
   );
 }

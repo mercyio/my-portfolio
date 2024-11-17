@@ -1,43 +1,50 @@
+"use client";
+
 import { AppSettingData } from "@/data/appSetting";
 import Link from "next/link";
-import { BaseTemplate } from "../../data/templates/base";
 
-export const FooterSection = () => {
+export function BaseFooter() {
   return (
-    <footer className="container mx-auto px-4 mt-16 pt-8 border-t border-zinc-800">
-      <div className="flex justify-between items-center text-zinc-400 text-sm">
-        <p>
-          Copyright © {AppSettingData.copyrightDate} • {AppSettingData.appName}
-        </p>
-        <div className="flex items-center gap-1">
-          <span>Built with Next.js</span>
-          <span>•</span>
-          <span>
-            Inspired by{" "}
-            <Link
-              href={BaseTemplate.inspiredBy}
-              className="hover:underline decoration-wavy decoration-1"
-              target="_blank"
-            >
-              {BaseTemplate.inspiredBy}
-            </Link>
-          </span>
-        </div>
-      </div>
-      <div className="flex flex-col items-center justify-center mt-4">
-        <div>
-          Created with ❤️ by{" "}
-          <Link href={AppSettingData.githubUrl} className="underline">
-            JC
-          </Link>
-        </div>
-        <div>
-          Create your own resume today with{" "}
-          <Link href={AppSettingData.githubUrl} className="underline">
-            {AppSettingData.appName}
-          </Link>
+    <footer className="py-12 border-t border-zinc-800">
+      <div className="max-w-[1000px] mx-auto px-4">
+        <div className="flex flex-col space-y-8">
+          {/* Credits Section */}
+          <div className="text-center border-t border-zinc-800/50 pt-8">
+            <p className="text-zinc-400 text-sm mb-3">
+              This portfolio was built with{" "}
+              <Link
+                href="https://github.com/IDAN-DEVS/portify"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:text-blue-300 font-medium"
+              >
+                Portify
+              </Link>
+              , an open-source portfolio builder
+            </p>
+            <div className="flex items-center justify-center space-x-2 text-xs text-zinc-500">
+              <span>Template Created by</span>
+              <Link
+                href="https://github.com/JC-Coder"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-zinc-400 hover:text-zinc-300 underline underline-offset-2"
+              >
+                JC CODER
+              </Link>
+              <span>•</span>
+              <Link
+                href={AppSettingData.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-zinc-400 hover:text-zinc-300 underline underline-offset-2"
+              >
+                Create Your Portfolio Now
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
   );
-};
+}

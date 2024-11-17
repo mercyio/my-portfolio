@@ -1,19 +1,19 @@
-import { UserSocialsData } from "./socials";
-import { UserInfoData } from "./usersInfo";
-import { IWorkExperience, UserWorkExperienceData } from "./workExperience";
+import { UserSocialsData } from "./socials"
+import { UserInfoData } from "./usersInfo"
+import { IWorkExperience, UserWorkExperienceData } from "./workExperience"
 
 interface IUserResumeData {
-  name: string;
-  tagline: string;
-  socials: typeof UserSocialsData;
-  skills?: string[];
-  education?: string[];
-  spokenLanguages?: string[];
-  experience?: IWorkExperience[];
+  name: string
+  tagline: string
+  socials: typeof UserSocialsData
+  skills?: string[]
+  education?: string[]
+  spokenLanguages?: string[]
+  experience?: IWorkExperience[]
 }
 
 export const UserResumeData: IUserResumeData = {
-  name: "Joseph Chimezie",
+  name: "JC CODER",
   tagline: UserInfoData.tagLine,
   // you can decide to use the UserSocialsData or create your own but it should follow the same structure
   // alternatively you can limit how many you want to show by doing UserSocialsData.slice(0, 2) where 2 is the number of items you want to show
@@ -26,7 +26,7 @@ export const UserResumeData: IUserResumeData = {
   education: ["Certificate"],
   spokenLanguages: ["English"],
   experience: UserWorkExperienceData,
-};
+}
 
 // This is to control which sections to show in the resume page
 export const UserResumeSections = {
@@ -34,4 +34,4 @@ export const UserResumeSections = {
   skills: true,
   education: true,
   spokenLanguages: true,
-};
+}

@@ -1,5 +1,5 @@
 export const UserInfoData = {
-  fullName: "Joseph Chimezie (JC CODER)",
+  fullName: "JC CODER",
   tagLine: "Software Engineer & Open Source Contributor",
   location: "The Meta verse",
   miniBio:
@@ -8,4 +8,4 @@ export const UserInfoData = {
     type: "url",
     url: "/images/jc_img_1.png",
   },
-};
+}
