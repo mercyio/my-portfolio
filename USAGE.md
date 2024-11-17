@@ -1,191 +1,115 @@
-# 📚 Portify Usage Guide
+# 🚀 Quick Start Guide - Portify
 
-This guide will walk you through setting up and customizing your Portify portfolio.
+Welcome to Portify! Create your stunning developer portfolio in minutes. This guide will help you get started quickly.
 
-## Table of Contents
+## 🎯 3 Steps to Your Portfolio
 
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Customization](#customization)
-- [Templates](#templates)
-- [Deployment](#deployment)
-- [FAQ](#faq)
+### 1️⃣ Setup (2 minutes)
 
-## Installation
+```bash
+# Clone and install
+git clone https://github.com/IDAN-DEVS/portify.git
+cd portify
+npm install   # or: yarn install
 
-1. **System Requirements**
-
-   - Node.js 16.8 or later
-   - npm or yarn
-   - Git
-
-2. **Setup**
-
-   ```bash
-   # Clone the repository
-   git clone https://github.com/IDAN-DEVS/portify.git
-
-   # Navigate to project directory
-   cd portify
-
-   # Install dependencies
-   npm install
-
-   # Start development server
-   npm run dev
-   ```
-
-## Configuration
-
-### Basic Information
-
-Edit `data/usersInfo.ts`:
-
-```typescript
-export const UserInfo = {
-  fullName: "Your Name",
-  tagLine: "Your Title",
-  location: "Your Location",
-  miniBio: "Your brief bio here...",
-};
+# Start development
+npm run dev   # or: yarn dev
 ```
 
-### Social Links
+Your site is now running at `http://localhost:3000` 🎉
 
-Edit `data/socials.ts` to add your social media profiles:
+### 2️⃣ Add Your Info (5 minutes)
+
+All your information goes in the `data` folder:
+
+📁 **data/**
+
+- `usersInfo.ts` - Your name, title, and bio
+- `projects.ts` - Your cool projects
+- `skills.ts` - Your tech skills
+- `socials.ts` - Your social links
+- `workExperience.ts` - Your work history
+
+#### Quick Examples:
+
+**🧑‍💻 Personal Info** (`usersInfo.ts`):
 
 ```typescript
-export const UserSocials = {
-  github: {
-    icon: Github,
-    url: "https://github.com/yourusername",
+export const UserInfoData = {
+  fullName: "Jane Doe",
+  tagLine: "Full Stack Developer",
+  location: "San Francisco, CA",
+  miniBio: "Passionate about creating beautiful web experiences",
+  heroImage: {
+    type: "url",
+    url: "/images/profile.png", // Add your image to public/images/
   },
-  twitter: {
-    icon: TwitterIcon,
-    url: "https://twitter.com/yourusername",
-  },
-  email: {
-    icon: Mail,
-    url: "your.email@example.com",
-  },
-};
+}
 ```
 
-### Projects
-
-Add your projects in `data/projects.ts`:
+**🛠️ Projects** (`projects.ts`):
 
 ```typescript
-export const UserProjects: Project[] = [
+export const ProjectsData = [
   {
-    title: "Project Name",
-    role: "Your Role",
-    description: "Project description...",
-    url: "https://project-url.com",
-    previewImage: "https://image-url.com/preview.png",
+    title: "My Awesome App",
+    description: "A cool app that does amazing things",
+    technologies: ["React", "Node.js", "MongoDB"],
+    githubUrl: "https://github.com/you/project",
+    liveUrl: "https://myapp.com",
+    image: "/images/project.png",
   },
-];
+]
 ```
 
-### Skills
-
-Configure your skills in `data/skills.ts`:
+**🔗 Social Links** (`socials.ts`):
 
 ```typescript
-export const UserSkills = [
-  {
-    name: "Skill Category",
-    description: "Brief description",
-    projects_completed: "X+",
-  },
-];
+export const UserSocialsData = {
+  github: "https://github.com/yourusername",
+  linkedin: "https://linkedin.com/in/yourusername",
+  twitter: "https://twitter.com/yourusername",
+  email: "you@example.com",
+}
 ```
 
-### Work Experience
+### 3️⃣ Customize (Optional)
 
-Add your work history in `data/workExperience.ts`:
+#### 🎨 Theme
+
+Edit colors in `tailwind.config.ts`:
 
 ```typescript
-export const UserWorkExperience: WorkExperience[] = [
-  {
-    company: "Company Name",
-    position: "Your Position",
-    period: "Start - End Date",
-    responsibilities: ["Responsibility 1", "Responsibility 2"],
+theme: {
+  extend: {
+    colors: {
+      primary: "#your-color",
+      // Add more colors
+    },
   },
-];
+}
 ```
 
-## Customization
+#### 🖼️ Images
 
-### Template Selection
+1. Add images to `public/images/`
+2. Reference them as `/images/your-image.png`
 
-Choose your template in `data/appSetting.ts`:
+## 🚀 Deploy
 
-```typescript
-export const AppSetting = {
-  template: AVAILABLE_TEMPLATES.BASE,
-};
-```
+Ready to go live? Deploy to Vercel in one click:
 
-### Feature Toggles
+1. Push your code to GitHub
+2. Visit [vercel.com](https://vercel.com)
+3. Import your repository
+4. Click "Deploy"
 
-Enable/disable sections in `data/templates/base.ts`:
+## 🆘 Need Help?
 
-```typescript
-export const BaseTemplate = {
-  features: {
-    SOCIALS_SECTION: true,
-    SKILLS_SECTION: true,
-    PROJECTS_SECTION: true,
-    WORK_EXPERIENCE_SECTION: true,
-  },
-};
-```
+- 📖 Check our [GitHub Issues](https://github.com/IDAN-DEVS/portify/issues)
+- 🤝 Join our community discussions
+- ⭐ Star us on GitHub if you like Portify!
 
-### Profile Image
+---
 
-Two options for profile images:
-
-1. **Local Image**:
-
-   - Add image to `/public/images/`
-   - Update `heroImage` in base template:
-
-   ```typescript
-   heroImage: {
-     type: "file",
-     url: "your-image.png"
-   }
-   ```
-
-2. **Remote Image**:
-   ```typescript
-   heroImage: {
-     type: "url",
-     url: "https://your-image-url.com/image.png"
-   }
-   ```
-
-## Deployment
-
-Deploy to your preferred platform:
-
-- **Vercel**: [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/IDAN-DEVS/portify)
-- **Netlify**: [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/IDAN-DEVS/portify)
-
-## FAQ
-
-### How do I add a new section?
-
-1. Create component in `components/BaseTemplate/`
-2. Add feature toggle in `data/templates/base.ts`
-3. Import and add component to `templates/base/page.tsx`
-
-### How do I change the theme?
-
-Edit colors in `app/globals.css` under the `:root` and `.dark` selectors.
-
-### Can I use my own fonts?
-
-Yes, modify the font-family in `app/globals.css` or use Next.js font optimization.
+Happy coding! 🎉
