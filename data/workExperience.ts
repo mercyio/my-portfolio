@@ -10,75 +10,61 @@ export interface IWorkExperience {
 
 export const UserWorkExperienceData: IWorkExperience[] = [
   {
-    company: "Truparse",
-    position: "Backend Developer",
-    period: "Jun 2023 - Oct 2024",
+    company: "TechGiant Corp",
+    companyUrl: "https://techgiant.example.com",
+    position: "Senior Software Engineer",
+    period: "Jan 2022 - Present",
+    shortDescription: "Leading backend development for cloud-based solutions",
     responsibilities: [
-      "Actively involved in code optimization and product development across offerings like Pawa (now Zed), Figur, and Joblynk",
-      "Spearheaded code optimizations that significantly reduced fraud and security risks",
-      "Built and optimized backend systems to improve conversion rates and enhance user experience by over 23%",
-      "Collaborated with cross-functional teams on requirements gathering, feature design, and product excellence",
-      "Developed robust, scalable backend solutions using Node.js, Express.js, MongoDB, PostgreSQL, and DigitalOcean",
-      "Implemented and enhanced security measures like authentication and authorization to protect sensitive user data",
-    ],
+      "Architected and implemented scalable microservices using Node.js and Kubernetes",
+      "Reduced system latency by 40% through implementation of Redis caching",
+      "Led a team of 5 developers in delivering critical features for enterprise clients",
+      "Implemented CI/CD pipelines that reduced deployment time by 60%",
+      "Mentored junior developers and conducted technical interviews",
+      "Collaborated with product managers to define technical specifications"
+    ]
   },
   {
-    company: "Onract",
-    position: "Backend Developer",
-    period: "Feb 2023 - Dec 2023",
+    company: "InnovateLabs",
+    companyUrl: "https://innovatelabs.example.com",
+    position: "Full Stack Developer",
+    period: "Mar 2020 - Dec 2021",
+    shortDescription: "Built and maintained multiple client-facing applications",
     responsibilities: [
-      "Developed scalable backend architectures using Node.js, Nest.js, TypeScript, and PostgreSQL",
-      "Built maintainable and performant RESTful APIs leveraging Node.js and Nest.js",
-      "Designed efficient PostgreSQL database schemas with optimized queries",
-      "Ensured code quality and maintainability through TypeScript and rigorous testing",
-      "Implemented secure authentication and authorization mechanisms for the backend",
-      "Collaborated closely with front-end engineers on API design and integration",
-    ],
+      "Developed responsive web applications using React and Node.js",
+      "Implemented real-time features using WebSocket technology",
+      "Optimized database queries resulting in 50% faster load times",
+      "Integrated third-party APIs for payment processing and analytics",
+      "Created comprehensive API documentation using Swagger",
+      "Participated in daily stand-ups and sprint planning meetings"
+    ]
   },
   {
-    company: "Pelmedic",
+    company: "StartupX",
+    projectUrl: "https://startupx.example.com",
     position: "Backend Developer",
-    period: "Feb 2023 - Jun 2023",
+    period: "Jun 2019 - Feb 2020",
+    shortDescription: "Core developer for an AI-powered analytics platform",
     responsibilities: [
-      "Rescued an 8-month stagnant project in 2 months through expertise in REST APIs, Node.js, Nest.js, MySQL",
-      "Boosted application performance through efficient architecture and database optimization",
-      "Implemented robust authentication and authorization to strengthen security",
-      "Achieved seamless front-end integration through effective collaboration",
-      "Proactively identified and resolved performance bottlenecks to optimize the system",
-      "Maintained clear communication channels to hit project milestones efficiently",
-    ],
+      "Built RESTful APIs using Express.js and MongoDB",
+      "Implemented user authentication using JWT and OAuth2",
+      "Developed automated testing suites with Jest",
+      "Created data processing pipelines for machine learning models",
+      "Optimized application performance and scalability",
+      "Collaborated with data scientists to implement ML features"
+    ]
   },
   {
-    company: "SpiCodeX",
-    position: "Backend Developer",
-    period: "Feb 2023 - Apr 2023",
+    company: "CodeCraft Solutions",
+    position: "Junior Developer",
+    period: "Jan 2019 - May 2019",
+    shortDescription: "Contributed to various client projects as part of an agile team",
     responsibilities: [
-      "Migrating the project from its old design to a new design system",
-      "Implementing an Electron port for a local developer-friendly version",
-      "Improving the codebase and resolving performance issues",
-    ],
-  },
-  {
-    company: "Start Innovation Hub",
-    position: "Backend Developer",
-    period: "Nov 2022 - Feb 2023",
-    companyUrl: "https://starthub.com.ng/",
-    projectUrl: "https://starthub.com.ng/",
-    shortDescription:
-      "At starthub, i was responsible for building the backend and managing the servers of the company website",
-    responsibilities: [
-      "Migrating the project from its old design to a new design system",
-      "Implementing an Electron port for a local developer-friendly version",
-      "Improving the codebase and resolving performance issues",
-    ],
-  },
-  {
-    company: "Freelance",
-    position: "Software Engineer",
-    period: "Oct 2020 - Present",
-    responsibilities: [
-      "Implementing a caching system for the company database service to improve performance",
-      "Implementing new features to query and download historical documents",
-    ],
-  },
+      "Developed and maintained features for e-commerce platforms",
+      "Fixed bugs and improved existing codebase",
+      "Participated in code reviews and documentation",
+      "Assisted in deployment and monitoring of applications",
+      "Learned and implemented best practices in software development"
+    ]
+  }
 ];
