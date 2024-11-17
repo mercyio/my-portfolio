@@ -1,7 +1,7 @@
 # Portify 🚀 - Your Developer Portfolio in Minutes
 
 <div align="center">
-  <img src="public/images/portify-banner.png" alt="Portify Banner" width="100%"/>
+  <img src="public/images/portify_logo.png" alt="Portify Banner" width="100%"/>
   
   <p align="center">
     <strong>Create a stunning developer portfolio without writing a single line of code.</strong>
@@ -51,6 +51,7 @@ Visit our [Templates Gallery](/templates) to explore all available templates:
 - More templates coming soon!
 
 Try them live:
+
 1. Visit `/templates` to see all available templates
 2. Click on any template to view a live demo
 3. Use the "Use Template" button to get started
@@ -75,6 +76,7 @@ yarn dev
 3. **Choose Your Template**
 
 Visit `http://localhost:3000/templates` to:
+
 - Browse available templates
 - Preview each template with demo data
 - Select your preferred design
@@ -98,6 +100,7 @@ export const UserInfoData = {
   },
 };
 ```
+
 </details>
 
 <details>
@@ -111,12 +114,14 @@ export const UserSocialsData = {
   email: "you@example.com",
 };
 ```
+
 </details>
 
 <details>
 <summary>💼 Projects & Experience</summary>
 
 See [USAGE.md](USAGE.md) for detailed examples of:
+
 - Project configuration
 - Work experience
 - Skills and education
@@ -150,5 +155,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 Created with ❤️ by [JC CODER](https://github.com/JC-Coder) and [IDAN DEVS](https://github.com/IDAN-DEVS)
 
 Templates designed by:
+
 - Base Template: [JC CODER](https://github.com/JC-Coder)
 - Shadow Template: [Bright Bassey](https://github.com/bright-bassey)
