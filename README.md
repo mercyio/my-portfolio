@@ -1,7 +1,7 @@
 # Portify 🚀 - Your Developer Portfolio in Minutes
 
 <div align="center">
-  <img src="public/images/portify_logo.png" alt="Portify Banner" width="100%"/>
+  <img src="public/images/portify_logo.png" alt="Portify Logo" width="200" height="auto"/>
   
   <p align="center">
     <strong>Create a stunning developer portfolio without writing a single line of code.</strong>
