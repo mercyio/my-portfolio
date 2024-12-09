@@ -38,6 +38,9 @@ export const HeroSection = () => {
                   <span>📍</span> {BaseTemplate.location}
                 </p>
                 <p className="text-base text-zinc-300 flex items-center gap-2">
+                  <span>📍</span> {BaseTemplate.contact}
+                </p>
+                <p className="text-base text-zinc-300 flex items-center gap-2">
                   <span>💻</span> {BaseTemplate.tagline}
                 </p>
               </div>
