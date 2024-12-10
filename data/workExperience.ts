@@ -13,7 +13,7 @@ export const UserWorkExperienceData: IWorkExperience[] = [
     company: "Start Innovation Hub",
     companyUrl: "https://starthub.com.ng",
     position: "Backend developer",
-    period: "Jan 2023 - Present",
+    period: "Jan 2024 - Present",
     shortDescription: "Leading backend development for cloud-based solutions",
     responsibilities: [
       "Architected and implemented scalable microservices using Node.js and Kubernetes",
@@ -57,7 +57,7 @@ export const UserWorkExperienceData: IWorkExperience[] = [
   {
     company: "Lawpat Tech Solutions",
     position: "Junior Developer",
-    period: "Jan 2022 - May 2023",
+    period: "Jan 2023 - May 2024",
     shortDescription: "Contributed to various client projects as part of an agile team",
     responsibilities: [
       "Developed and maintained features for e-commerce platforms",
