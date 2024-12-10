@@ -8,7 +8,7 @@ export const ProjectsSection = () => {
 
   return (
     <section className="container mx-auto px-4 mb-16">
-      <h2 className="text-2xl font-bold mb-8">Projects</h2>
+      <h2 className="text-2xl font-bold mb-8">Latest Projects</h2>
       <div className="space-y-24">
         {UserProjectsData.map((project, index) => (
           <div
