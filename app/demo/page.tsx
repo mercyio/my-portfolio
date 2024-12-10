@@ -4,10 +4,10 @@ import { useSearchParams } from "next/navigation";
 import { AVAILABLE_TEMPLATES } from "@/data/templates/config";
 import BaseTemplate from "@/templates/base/page";
 import ShadowTemplate from "@/templates/shadow/page";
-import { useEffect } from "react";
+import { useEffect, Suspense } from "react";
 import Link from "next/link";
 
-const DemoPage = () => {
+const DemoContent = () => {
   const searchParams = useSearchParams();
   const template = searchParams.get("template");
 
@@ -63,5 +63,11 @@ const DemoPage = () => {
     </div>
   );
 };
+
+const DemoPage = () => (
+  <Suspense fallback={<div>Loading...</div>}>
+    <DemoContent />
+  </Suspense>
+);
 
 export default DemoPage;
