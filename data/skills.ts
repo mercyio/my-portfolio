@@ -9,14 +9,14 @@ export const UserSkillsData = [
     description: "Development of complex and scalable backend architecture.",
     projects_completed: "30+",
   },
-  {
-    name: "Wordpress Development",
-    description: "Building websites using the wordpress CMS",
-    projects_completed: "6+",
-  },
-  {
-    name: "Devops",
-    description: "Building/maintaining CI/CD pipelines and managing servers",
-    projects_completed: "12+",
-  },
+  // {
+  //   name: "Wordpress Development",
+  //   description: "Building websites using the wordpress CMS",
+  //   projects_completed: "6+",
+  // },
+  // {
+  //   name: "Devops",
+  //   description: "Building/maintaining CI/CD pipelines and managing servers",
+  //   projects_completed: "12+",
+  // },
 ];

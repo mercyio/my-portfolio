@@ -1,32 +1,42 @@
-import { Github, Linkedin, Mail, TwitterIcon } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  Mail,
+  TwitterIcon,
+  // PhoneIcon,
+  // Twitch,
+  // InstagramIcon,
+  // FacebookIcon,
+  DiscIcon,
+} from "lucide-react";
 
 export const UserSocialsData = {
   // facebook: {
   //   icon: FacebookIcon,
-  //   url: "https://facebook.com/jc_coder1",
+  //   url: "https://github.com/mercyio",
   // },
   github: {
     icon: Github,
-    url: "https://github.com/JC-Coder",
+    url: "https://github.com/mercyio",
   },
   // instagram: {
-  //   icon: InstagramIcon,
-  //   url: ''
+  //   icon: PhoneIcon,
+  //   url: "https://github.com/mercyio",
   // },
   twitter: {
     icon: TwitterIcon,
-    url: "https://twitter.com/jc_coder1",
+    url: "https://twitter.com/IMercyio",
   },
   email: {
     icon: Mail,
-    url: "josephchimezie2003@gmail.com",
+    url: "mercydanke@gmail.com",
   },
   linkedin: {
     icon: Linkedin,
-    url: "https://www.linkedin.com/in/joseph-chimezie-19504325a/",
+    url: "https://www.linkedin.com/in/mercy-vincent-a32841232/",
   },
-  // twitch: {
-  //   icon: Twitch,
-  //   url: "https://twitch.tv/jc_coder1",
-  // },
+  discord: {
+    icon: DiscIcon,
+    url: "https://github.com/mercyio",
+  },
 };

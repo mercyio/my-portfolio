@@ -4,6 +4,7 @@ export enum FeaturesEnum {
   SOCIALS_SECTION = "SOCIALS_SECTION",
   SKILLS_SECTION = "SKILLS_SECTION",
   PROJECTS_SECTION = "PROJECTS_SECTION",
+  CONTACT_SECTION = "CONTACT_SECTION",
   WORK_EXPERIENCE_SECTION = "WORK_EXPERIENCE_SECTION",
 }
 
@@ -14,6 +15,7 @@ export interface BaseTemplate {
   };
   fullName: string;
   location: string;
+  contact: string;
   tagline: string;
   miniBio: string;
   features: {
@@ -29,16 +31,18 @@ export const BaseTemplate: BaseTemplate = {
     // this is the type of the hero image, it can be a url or a file
     type: "file",
     // if it's a file, it should be in the public folder and you should use the file name
-    url: "jc_img_1.png",
+    url: "me.jpeg",
   },
   fullName: UserInfoData.fullName,
   location: UserInfoData.location,
+  contact: UserInfoData.contact,
   tagline: UserInfoData.tagLine,
   miniBio: UserInfoData.miniBio,
   features: {
     [FeaturesEnum.SOCIALS_SECTION]: true,
     [FeaturesEnum.SKILLS_SECTION]: true,
     [FeaturesEnum.PROJECTS_SECTION]: true,
+    [FeaturesEnum.CONTACT_SECTION]: true,
     [FeaturesEnum.WORK_EXPERIENCE_SECTION]: true,
   },
 };

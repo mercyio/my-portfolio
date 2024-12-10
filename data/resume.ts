@@ -13,7 +13,7 @@ interface IUserResumeData {
 }
 
 export const UserResumeData: IUserResumeData = {
-  name: "JC CODER",
+  name: "Mercy Vincent",
   tagline: UserInfoData.tagLine,
   // you can decide to use the UserSocialsData or create your own but it should follow the same structure
   // alternatively you can limit how many you want to show by doing UserSocialsData.slice(0, 2) where 2 is the number of items you want to show
@@ -21,7 +21,7 @@ export const UserResumeData: IUserResumeData = {
   skills: [
     "Backend Development - Javascript, Typescript, NodeJS (Express, NestJS), Github, RESTful APIs, Microservices, Redis, RabbitMQ",
     "Databases - Postgres, Mysql, MongoDB, Redis",
-    "DevOps - Docker, AWS, Digital Ocean, Github CI/CD",
+    // "DevOps - Docker, AWS, Digital Ocean, Github CI/CD",
   ],
   education: ["Certificate"],
   spokenLanguages: ["English"],
