@@ -22,8 +22,8 @@ export const UserWorkExperienceData: IWorkExperience[] = [
       "Implemented CI/CD pipelines that reduced deployment time by 60%",
       // "Mentored junior developers and conducted technical interviews",
       "Collaborated with product managers to define technical specifications",
-      "Implemented real-time features using WebSocket technology"
-    ]
+      "Implemented real-time features using WebSocket technology",
+    ],
   },
   // {
   //   company: "GreenBounty",
@@ -57,14 +57,15 @@ export const UserWorkExperienceData: IWorkExperience[] = [
   {
     company: "Lawpat Tech Solutions",
     position: "Junior Developer",
-    period: "Jan 2023 - May 2024",
-    shortDescription: "Contributed to various client projects as part of an agile team",
+    period: "May 2022 - Nov 2023",
+    shortDescription:
+      "Contributed to various client projects as part of an agile team",
     responsibilities: [
       "Developed and maintained features for e-commerce platforms",
       "Fixed bugs and improved existing codebase",
       "Participated in code reviews and documentation",
       "Assisted in deployment and monitoring of applications",
-      "Learned and implemented best practices in software development"
-    ]
-  }
+      "Learned and implemented best practices in software development",
+    ],
+  },
 ];

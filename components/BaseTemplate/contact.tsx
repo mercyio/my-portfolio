@@ -1,22 +1,49 @@
-import contactInfo from "@/data/contact";
+"use client";
+
+import { contactInfo } from "@/data/contact";
+import { useState } from "react";
 
 export const ContactSection = () => {
-//   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-//     e.preventDefault();
-//     alert("Thank you for reaching out! Form submitted.");
-//     // Add API call here for real functionality
-//   };
+  const [status, setStatus] = useState('');
+  
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    
+    // try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.get('name'),
+          email: formData.get('email'),
+          message: formData.get('message'),
+        }),
+      });
+
+      if (response.ok) {
+        setStatus('Message sent successfully!');
+        (e.target as HTMLFormElement).reset();
+      } else {
+        setStatus('Failed to send message. Please try again.');
+      }
+    // } catch (err) {
+    //   setStatus(err);
+    // }
+  };
 
   return (
     <section className="container mx-auto px-4 mb-16">
       <h2 className="text-2xl font-bold mb-8">Contact Me</h2>
       <div className="space-y-8">
         <p className="text-zinc-300 leading-relaxed">{contactInfo.description}</p>
-        <ul className="space-y-2">
-          {/* <li className="text-zinc-400">Email: {contactInfo.email}</li>
-          <li className="text-zinc-400">Phone: {contactInfo.phone}</li> */}
-        </ul>
-        {/* <form onSubmit={handleSubmit} className="space-y-4"> */}
+        {/* <ul className="space-y-2">
+          <li className="text-zinc-400">Email: {contactInfo.email}</li>
+          <li className="text-zinc-400">Phone: {contactInfo.phone}</li>
+        </ul> */}
+        <form onSubmit={handleSubmit} className="space-y-8" >
           <div>
             <label htmlFor="name" className="block text-sm text-zinc-300">
               Name
@@ -59,7 +86,12 @@ export const ContactSection = () => {
           >
             Send Message
           </button>
-        {/* </form> */}
+        </form>
+        {status && (
+          <p className={`mt-6 text-center ${status.includes('success') ? 'text-green-500' : 'text-red-500'}`}>
+            {status}
+          </p>
+        )}
       </div>
     </section>
   );
