@@ -26,13 +26,12 @@ export const UserProjectsData: Project[] = [
       "https://i.postimg.cc/sgbYzg5H/Screenshot-from-2024-12-09-18-33-14.png",
   },
   {
-    title: "AgriTech",
-    role: "Backend Developer",
+    title: "Karepal",
+    role: "Backend developer",
     description:
-      "AgriTech is an AI-powered mobile app to help farmers monitor crop health and detect diseases early.It uses computer vision and machine learning to analyze crop images and identify issues like pests or nutrient deficiencies. It provides feedbacks and actionable recommendations to improve crop yield and health. This solution is user-friendly, accessible to farmers of all technical levels with the Aim of enhancing productivity and promoting sustainable farming practices",
-    url: "https://agripro-connect.vercel.app/",
-    previewImage:
-      "https://i.postimg.cc/tRhDqWT0/Screenshot-from-2024-12-09-18-56-32.png",
+      "KarePal for Neonatal Care provides an AI-powered solution that combines the power of computer vision and diverse health data to provide personalized care for infants. The platform supports caregivers with real-time insights, early health issue detection, and tailored interventions to ensure the well-being of newborns. KarePal is a vital tool for ensuring care during the critical early stages of life.",
+    url: "https://karepal-frontend.vercel.app/",
+    previewImage: "https://i.postimg.cc/W1qQz7K0/karepal-Logo-New.jpg",
   },
   {
     title: "TicTacToe",
@@ -43,13 +42,16 @@ export const UserProjectsData: Project[] = [
     previewImage:
       "https://i.postimg.cc/ZRcrtFb4/Screenshot-from-2024-12-09-17-32-33.png",
   },
+
+
   {
-    title: "Karepal",
-    role: "Backend developer",
+    title: "AgriTech",
+    role: "Backend Developer",
     description:
-      "KarePal for Neonatal Care provides an AI-powered solution that combines the power of computer vision and diverse health data to provide personalized care for infants. The platform supports caregivers with real-time insights, early health issue detection, and tailored interventions to ensure the well-being of newborns. KarePal is a vital tool for ensuring care during the critical early stages of life.",
-    url: "",
-    previewImage: "https://i.postimg.cc/hPbqFXxM/karepal-Logo.jpg",
+      "AgriTech is an AI-powered mobile app to help farmers monitor crop health and detect diseases early.It uses computer vision and machine learning to analyze crop images and identify issues like pests or nutrient deficiencies. It provides feedbacks and actionable recommendations to improve crop yield and health. This solution is user-friendly, accessible to farmers of all technical levels with the Aim of enhancing productivity and promoting sustainable farming practices",
+    url: "https://agripro-connect.vercel.app/",
+    previewImage:
+      "https://i.postimg.cc/tRhDqWT0/Screenshot-from-2024-12-09-18-56-32.png",
   },
   // {
   //   title: "macwin",
