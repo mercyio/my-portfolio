@@ -50,6 +50,7 @@ export const UserProjectsData: Project[] = [
     description:
       "AgriTech is an AI-powered mobile app to help farmers monitor crop health and detect diseases early.It uses computer vision and machine learning to analyze crop images and identify issues like pests or nutrient deficiencies. It provides feedbacks and actionable recommendations to improve crop yield and health. This solution is user-friendly, accessible to farmers of all technical levels with the Aim of enhancing productivity and promoting sustainable farming practices",
     url: "https://github.com/mercyio",
+    // url: "https://agripro-connect.vercel.app/",
     previewImage:
       "https://i.postimg.cc/tRhDqWT0/Screenshot-from-2024-12-09-18-56-32.png",
   },
