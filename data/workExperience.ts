@@ -10,15 +10,18 @@ export interface IWorkExperience {
 
 export const UserWorkExperienceData: IWorkExperience[] = [
   {
-    company: "Start Innovation Hub",
-    companyUrl: "https://starthub.com.ng",
-    position: "Backend developer",
-    period: "Jan 2024 - Present",
-    shortDescription: "Leading backend development for cloud-based solutions",
+    company: "Lawpat Technologies",
+    companyUrl: "https://lawpat.ng/",
+    position: "Backend developer Intern",
+    period: "April 2024 - Present",
+    shortDescription:
+      "Built and maintained multiple client-facing applications",
     responsibilities: [
       // "Architected and implemented scalable microservices using Node.js and Kubernetes",
+      "Built RESTful APIs using Express.js and MongoDB",
       "Reduced system latency by 40% through implementation of Redis caching",
       "Implemented user authentication using JWT and OAuth2",
+      "Optimized database queries resulting in 50% faster load times",
       // "Implemented CI/CD pipelines that reduced deployment time by 60%",
       // "Mentored junior developers and conducted technical interviews",
       "Integrated third-party APIs for payment processing and analytics",
@@ -56,17 +59,17 @@ export const UserWorkExperienceData: IWorkExperience[] = [
   //   ]
   // },
   {
-    company: "Lawpat Tech Solutions",
-    position: "Junior Developer",
-    period: "May 2022 - Nov 2023",
+    company: "The Roothub",
+    companyUrl: "https://theroothub.com/",
+    position: "Web Developer Intern",
+    period: "May 2022 - Nov 2022",
     shortDescription:
       "Contributed to various client projects as part of an agile team",
     responsibilities: [
       "Developed and maintained features for e-commerce platforms",
       "Fixed bugs and improved existing codebase",
-      "Participated in code reviews and documentation",
-      "Optimized database queries resulting in 50% faster load times",
-      "Built RESTful APIs using Express.js and MongoDB",
+      "Learned and implemented best practices in software development",
+      "Participated in daily stand-ups and sprint planning meetings",
     ],
   },
 ];
