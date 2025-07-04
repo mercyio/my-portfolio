@@ -26,7 +26,7 @@ export interface ShadowTemplate {
 export const ShadowTemplate: ShadowTemplate = {
   heroImage: {
     type: "file",
-    url: "profile.png", // Update with your image
+    url: "mercyio.jpg", // Update with your image
   },
   fullName: UserInfoData.fullName,
   location: UserInfoData.location,
