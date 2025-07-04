@@ -8,6 +8,24 @@ export interface Project {
 
 export const UserProjectsData: Project[] = [
   {
+    title: "Propellant",
+    role: "Backend Developer",
+    description:
+      "Propellant is a platform designed to connect talented African creatives and tech professionals with global opportunities. It streamlines the process of showcasing portfolios, applying to gigs, and getting hired. As a backend developer, I helped build robust APIs and ensure scalable architecture to support a growing user base. Propellant empowers users to showcase their work and get discovered by top recruiters around the world.",
+    url: "https://propellant-hr.fly.dev/",
+    previewImage:
+      "https://i.postimg.cc/2yGG6DxL/Screenshot-from-2025-07-04-18-43-39.png",
+  },
+  {
+    title: "Mothrbox",
+    role: "Backend Developer",
+    description:
+      "Mothrbox is a privacy-first, developer-focused data storage layer built for decentralized and hybrid applications. It enables secure encryption, storage, and retrieval of files using RESTful APIs. I worked on building and refining core backend services, contributing to encryption workflows, storage handling, and API endpoint optimization. Mothrbox is ideal for developers building Web3, AI, and privacy-critical applications.",
+    url: "https://mothrbox.com/",
+    previewImage:
+      "https://i.postimg.cc/WbKr7ztb/Screenshot-from-2025-07-04-18-46-25.png",
+  },
+  {
     title: "GreenBounty",
     role: "Backend Developer",
     description:
@@ -42,8 +60,6 @@ export const UserProjectsData: Project[] = [
     previewImage:
       "https://i.postimg.cc/ZRcrtFb4/Screenshot-from-2024-12-09-17-32-33.png",
   },
-
-
   {
     title: "AgriTech",
     role: "Backend Developer",
