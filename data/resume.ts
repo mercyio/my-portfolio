@@ -21,7 +21,7 @@ export const UserResumeData: IUserResumeData = {
   skills: [
     "Backend Development - Javascript, Typescript, NodeJS (Express, NestJS), Github, RESTful APIs, Microservices, Redis, RabbitMQ",
     "Databases - Postgres, Mysql, MongoDB, Redis",
-    // "DevOps - Docker, AWS, Digital Ocean, Github CI/CD",
+    "DevOps - Docker, AWS, Digital Ocean, Github CI/CD",
   ],
   education: ["Certificate"],
   spokenLanguages: ["English"],
