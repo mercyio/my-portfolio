@@ -31,7 +31,7 @@ export const BaseTemplate: BaseTemplate = {
     // this is the type of the hero image, it can be a url or a file
     type: "file",
     // if it's a file, it should be in the public folder and you should use the file name
-    url: "mercyio.jpg",
+    url: "mercy-dp.png",
   },
   fullName: UserInfoData.fullName,
   location: UserInfoData.location,
