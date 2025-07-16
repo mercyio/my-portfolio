@@ -22,7 +22,7 @@ Welcome to my personal portfolio — a curated space where I showcase my work, e
 |---------------|-------------------------------------------------------------|
 | [GreenBounty](https://green-bounty.vercel.app) | Eco-reward app incentivizing recycling with a point system |
 | [STOKE](https://stoke-predict.vercel.app)     | Crypto prediction platform with live leaderboards          |
-| [BackerBoost](https://github.com/mercyio/backerboost) | Web3-powered creator support tool using wallet verification |
+| [BackerBoost](https://github.com/mercyio/cardano) | Web3-powered creator support tool using wallet verification |
 | [KarePal](https://karepal-frontend.vercel.app)       | AI-based neonatal care mobile app                         |
 | [DrowsyGuard](https://github.com/mercyio/drowsyGuardBackend) | Mobile app detecting drowsiness using facial monitoring   |
 
